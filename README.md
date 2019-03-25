@@ -2,6 +2,8 @@
 
 iPad/Tablet app to read comics on [ManHuaGui](https://www.manhuagui.com).
 
+In this fork, the UI is mostly translated into Traditional Chinese.
+
 ## Getting Started
 
 1. Copy `config.dart` from `config.demo.dart`
