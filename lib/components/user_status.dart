@@ -26,7 +26,7 @@ class _UserStatusButtonState extends State<UserStatusButton> {
       barrierDismissible: false,
       builder: (context) => SimpleDialog(
             title: Center(
-                child: user.isLogin ? const Text('已登录') : const Text('用户登录')),
+                child: user.isLogin ? const Text('已登入') : const Text('使用者登入')),
             children: [
               user.isLogin ? LogoutForm() : LoginForm(),
             ],
@@ -50,7 +50,7 @@ class _UserStatusButtonState extends State<UserStatusButton> {
             ),
             widget.showUserName
                 ? Text(
-                    user.isLogin ? ' ${user.nickname}' : '（未登录）',
+                    user.isLogin ? ' ${user.nickname}' : '（未登入）',
                     style: TextStyle(
                       fontSize: fontSize,
                       color: user.isLogin ? Colors.white : Colors.red[200],

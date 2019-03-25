@@ -21,10 +21,10 @@ final Map<AjaxAction, String> _actionMap = {
 
 class User {
   static const _BASE_AJAX_URL =
-      'https://www.manhuagui.com/tools/submit_ajax.ashx';
+      'https://tw.manhuagui.com/tools/submit_ajax.ashx';
   static const _PAGE_FAVORITE_URL =
       'https://m.manhuagui.com/user/book/?ajax=1&page=';
-  static const _SHELF_URL = 'https://www.manhuagui.com/user/book/shelf';
+  static const _SHELF_URL = 'https://tw.manhuagui.com/user/book/shelf';
 
   static String buildActionUrl(AjaxAction action,
       {Map<String, String> queryParams}) {

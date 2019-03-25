@@ -13,7 +13,7 @@ class RouteAuthor extends StatefulWidget {
     'author',
     Icons.people,
     () => RouteAuthor(),
-    label: '漫画家',
+    label: '漫畫家',
   );
 
   @override
@@ -34,7 +34,7 @@ class _RouteAuthorState extends State<RouteAuthor> {
       context: context,
       barrierDismissible: false,
       builder: (context) => SimpleDialog(
-            title: DialogTopBar('查找作者'),
+            title: DialogTopBar('查詢作者'),
             children: [
               DialogBody(
                 filterSelector.meta.filterGroups,

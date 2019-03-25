@@ -5,7 +5,7 @@ import 'selectors.dart';
 import '../api/request.dart';
 
 const PROTOCOL = 'https';
-const DOMAIN = 'www.manhuagui.com';
+const DOMAIN = 'tw.manhuagui.com';
 
 abstract class Displayable {
   String get display;

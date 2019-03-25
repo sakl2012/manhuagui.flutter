@@ -52,7 +52,7 @@ class ComicBook extends ComicCover {
 
   String get url => "$PROTOCOL://$DOMAIN$path";
   String get voteUrl =>
-      'https://www.manhuagui.com/tools/vote.ashx?act=get&bid=$bookId';
+      'https://tw.manhuagui.com/tools/vote.ashx?act=get&bid=$bookId';
 
   Future<void> _updateChapters() async {
     final chMap = await globals.localDb.query(

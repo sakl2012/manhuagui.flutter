@@ -33,12 +33,12 @@ class _ResultListState extends State<ResultList> {
   bool get _isLastPage => _page == _pageCount;
 
   static const _NEXT_THRESHOLD = 2500.0; // > 10 items
-  static const _BASE_URL = 'https://www.manhuagui.com/s/'; // > 10 items
+  static const _BASE_URL = 'https://tw.manhuagui.com/s/'; // > 10 items
   static const _ORDER_MAP = {
     '': '最新更新',
-    '_o1': '最近最热',
+    '_o1': '最近熱門',
     '_o2': '最新上架',
-    '_o3': '评分最高',
+    '_o3': '評分最高',
   };
 
   String _order = '';
@@ -205,7 +205,7 @@ class _ResultListState extends State<ResultList> {
                 ),
               ),
             ],
-            middle: Text('搜索：${widget.searchKey}',
+            middle: Text('搜尋：${widget.searchKey}',
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 18.0,

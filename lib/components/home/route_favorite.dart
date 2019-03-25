@@ -96,7 +96,7 @@ class _RouteFavoriteState extends State<RouteFavorite> {
       context: context,
       barrierDismissible: false,
       builder: (context) => AlertDialog(
-            title: const Text('此功能需要登录！'),
+            title: const Text('此功能需要登入！'),
             content: Container(
               height: 120.0,
               child: Column(
@@ -105,7 +105,7 @@ class _RouteFavoriteState extends State<RouteFavorite> {
                 children: <Widget>[
                   RaisedButton(
                     color: Colors.lightBlue[700],
-                    child: const Text('登录',
+                    child: const Text('登入',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18.0,
@@ -115,7 +115,7 @@ class _RouteFavoriteState extends State<RouteFavorite> {
                         context: context,
                         barrierDismissible: false,
                         builder: (context) => SimpleDialog(
-                              title: const Text('用户登录'),
+                              title: const Text('使用者登入'),
                               children: [
                                 LoginForm(),
                               ],
@@ -128,7 +128,7 @@ class _RouteFavoriteState extends State<RouteFavorite> {
                   ),
                   RaisedButton(
                     color: Colors.red[900],
-                    child: const Text('关闭',
+                    child: const Text('關閉',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18.0,

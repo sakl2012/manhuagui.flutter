@@ -28,7 +28,7 @@ class CoverHeader extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Text(
-                    '[${comic.finished ? '完结' : '连载'}] ${comic.lastUpdatedChapter}',
+                    '[${comic.finished ? '完結' : '連載'}] ${comic.lastUpdatedChapter}',
                     style: TextStyle(
                       fontSize: 15.0,
                       color:
@@ -45,7 +45,7 @@ class CoverHeader extends StatelessWidget {
                     children: comic.authors == null
                         ? [
                             Text(
-                              '[无作者数据]',
+                              '[無作者數據]',
                               style: TextStyle(
                                 fontSize: 18.0,
                                 color: Colors.red[600],
@@ -79,7 +79,7 @@ class CoverHeader extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(1.0),
                           child: Text(
-                            (comic.tags ?? ['[无类型数据]']).join(' '),
+                            (comic.tags ?? ['[無類型數據]']).join(' '),
                             style: TextStyle(
                               fontSize: 16.0,
                             ),

@@ -14,7 +14,7 @@ class AnimationHelper {
     );
     animation = CurvedAnimation(
       parent: _controller,
-      curve: const Interval(0.0, 1.0),
+      curve: const Interval(0.0, 0.5),
     );
 
     _posLeftRightFr = tweenLRF.animate(animation);

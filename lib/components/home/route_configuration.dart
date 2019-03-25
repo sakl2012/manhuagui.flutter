@@ -42,7 +42,7 @@ class _RouteConfigurationState extends State<RouteConfiguration> {
                   decoration: const BoxDecoration(
                     border: Border(bottom: BorderSide(color: Colors.orange)),
                   ),
-                  child: const Text('黑名单', style: TextStyle(fontSize: 24.0)),
+                  child: const Text('黑名單', style: TextStyle(fontSize: 24.0)),
                 ),
                 Container(
                   padding: const EdgeInsets.all(15.0),
@@ -85,7 +85,7 @@ class _RouteConfigurationState extends State<RouteConfiguration> {
                   decoration: const BoxDecoration(
                     border: Border(bottom: BorderSide(color: Colors.orange)),
                   ),
-                  child: const Text('杂项', style: TextStyle(fontSize: 24.0)),
+                  child: const Text('其他', style: TextStyle(fontSize: 24.0)),
                 ),
                 Container(
                   padding: const EdgeInsets.all(5.0),
@@ -97,7 +97,7 @@ class _RouteConfigurationState extends State<RouteConfiguration> {
                     children: [
                       RaisedButton(
                         color: Colors.lightBlue[800],
-                        child: const Text('缓存',
+                        child: const Text('暫存',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 16.0,
@@ -108,7 +108,7 @@ class _RouteConfigurationState extends State<RouteConfiguration> {
                             context: context,
                             barrierDismissible: false,
                             builder: (context) => SimpleDialog(
-                                  title: const Text('清除缓存'),
+                                  title: const Text('清除暫存'),
                                   children: [
                                     cleanning
                                         ? const Text('清除中...')
@@ -130,7 +130,7 @@ class _RouteConfigurationState extends State<RouteConfiguration> {
                                           : () {
                                               Navigator.pop(context);
                                             },
-                                      child: const Text('关闭'),
+                                      child: const Text('關閉'),
                                     ),
                                   ],
                                 ),

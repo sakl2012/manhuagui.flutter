@@ -12,7 +12,7 @@ class RouteHistory extends StatefulWidget {
     'history',
     Icons.history,
     () => RouteHistory(),
-    label: '历史',
+    label: '歷史',
   );
 
   @override

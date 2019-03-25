@@ -13,7 +13,7 @@ final _router = SubRouter(
   'home',
   Icons.home,
   () => RouteHome(),
-  label: '首页',
+  label: '首頁',
 );
 
 class RouteHome extends StatefulWidget {
@@ -186,7 +186,7 @@ class _HomeCover extends StatelessWidget {
                 ),
               ),
               Text(
-                cover.finished ? '[完结]' : '[连载]',
+                cover.finished ? '[完結]' : '[連載]',
                 style: TextStyle(color: color, fontSize: 11.0),
               )
             ],

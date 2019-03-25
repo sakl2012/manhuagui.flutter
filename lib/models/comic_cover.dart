@@ -28,7 +28,7 @@ class ComicCover {
   String get lastUpdatedChapterTitle => lastUpdatedChapter ?? '';
   String get lastReadChapterTitle => lastReadChapter ?? '';
   String get maxReadChapterTitle => maxReadChapter ?? '';
-  String get progress => finished ? '完结' : '连载';
+  String get progress => finished ? '完結' : '連載';
 
   List<AuthorLink> authors;
   List<String> tags;
@@ -61,7 +61,7 @@ class ComicCover {
     (() {
       var ef = element.querySelector('.thumb > i');
       if (ef != null) {
-        cc.finished = ef.text.trim() == '完结';
+        cc.finished = ef.text.trim() == '完結';
         return;
       }
 

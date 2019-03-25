@@ -53,7 +53,7 @@ class _LoginFormState extends State<LoginForm> {
     }
   }
 
-  static const REGISTER_URL = 'https://www.manhuagui.com/user/register';
+  static const REGISTER_URL = 'https://tw.manhuagui.com/user/register';
 
   void _register() async {
     if (await canLaunch(REGISTER_URL)) {
@@ -62,10 +62,10 @@ class _LoginFormState extends State<LoginForm> {
       await showDialog<void>(
         context: context,
         builder: (context) => AlertDialog(
-              title: const Text('无法打开外部链接'),
+              title: const Text('無法打開連結'),
               content: Center(
                   child: RaisedButton(
-                child: const Text('确定'),
+                child: const Text('確定'),
                 color: Colors.red,
                 onPressed: () {
                   Navigator.pop(context);
@@ -89,18 +89,18 @@ class _LoginFormState extends State<LoginForm> {
                     controller: _username,
                     autofocus: true,
                     decoration: const InputDecoration(
-                        hintText: '用户名',
+                        hintText: '使用者名稱',
                         labelStyle: TextStyle(color: Colors.red)),
                   ),
                   TextFormField(
                     controller: _password,
                     obscureText: true,
                     decoration: const InputDecoration(
-                      hintText: '密码',
+                      hintText: '密碼',
                     ),
                   ),
                   // SwitchListTile(
-                  //   title: const Text('记住密码',style: TextStyle(color: Colors.blue, fontSize: 18.0)),
+                  //   title: const Text('記住密碼',style: TextStyle(color: Colors.blue, fontSize: 18.0)),
                   //   value: _remember,
                   //   onChanged: (value) {
                   //     setState(() {
@@ -122,7 +122,7 @@ class _LoginFormState extends State<LoginForm> {
                                   color: Colors.white, size: 36.0),
                               Expanded(
                                   child: Center(
-                                      child: const Text('网站注册',
+                                      child: const Text('網站註冊',
                                           style: const TextStyle(
                                             fontSize: 18.0,
                                             color: Colors.white,
@@ -153,7 +153,7 @@ class _LoginFormState extends State<LoginForm> {
                       color: Colors.lightBlue[800],
                       textColor: Colors.white,
                       child: Center(
-                          child: const Text('登 录',
+                          child: const Text('登 入',
                               style: const TextStyle(fontSize: 21.0))),
                       onPressed: anyEmtpy ? null : _startLogin,
                     ),
@@ -166,7 +166,7 @@ class _LoginFormState extends State<LoginForm> {
                         height: 100.0,
                         child: CircularProgressIndicator(),
                       ),
-                      const Text('登录中...',
+                      const Text('登入中...',
                           style: TextStyle(
                             color: Colors.blue,
                             fontSize: 20.0,
@@ -174,7 +174,7 @@ class _LoginFormState extends State<LoginForm> {
                     ]
                   : _status == LoginStatus.success
                       ? [
-                          const Text('登录成功！',
+                          const Text('登入成功！',
                               style: TextStyle(
                                 color: Colors.green,
                                 fontSize: 30.0,
@@ -195,7 +195,7 @@ class _LoginFormState extends State<LoginForm> {
                         ]
                       : [
                           // failed
-                          const Text('登录失败！',
+                          const Text('登入失敗！',
                               style: TextStyle(
                                 color: Colors.red,
                                 fontSize: 30.0,
@@ -206,7 +206,7 @@ class _LoginFormState extends State<LoginForm> {
                             child: RaisedButton(
                               color: Colors.lightBlue[800],
                               textColor: Colors.white,
-                              child: const Text('重新输入',
+                              child: const Text('重新輸入',
                                   style: const TextStyle(fontSize: 18.0)),
                               onPressed: () {
                                 setState(() {
@@ -223,7 +223,7 @@ class _LoginFormState extends State<LoginForm> {
                             child: RaisedButton(
                               color: Colors.red[800],
                               textColor: Colors.white,
-                              child: const Text('关闭',
+                              child: const Text('關閉',
                                   style: const TextStyle(fontSize: 18.0)),
                               onPressed: () {
                                 Navigator.pop(context);

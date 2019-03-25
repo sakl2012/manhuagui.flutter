@@ -76,7 +76,7 @@ class ComicCoverRow extends StatelessWidget {
                         Text(
                           _cover.updatedAt == null
                               ? ''
-                              : '更新于 ${_cover.updatedAt}',
+                              : '更新於 ${_cover.updatedAt}',
                           style: const TextStyle(fontSize: 14.0),
                         ),
                       ],
@@ -90,7 +90,7 @@ class ComicCoverRow extends StatelessWidget {
                           children: _cover.authors == null
                               ? [
                                   Text(
-                                    '[无作者数据]',
+                                    '[無作者數據]',
                                     style: TextStyle(
                                       fontSize: 17.0,
                                       color: Colors.red[600],
@@ -127,7 +127,7 @@ class ComicCoverRow extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          (_cover.tags ?? ['[无类型数据]']).join(' '),
+                          (_cover.tags ?? ['[無類型數據]']).join(' '),
                           style: TextStyle(
                             fontSize: 15.0,
                           ),
@@ -154,7 +154,7 @@ class ComicCoverRow extends StatelessWidget {
                                 alignment: Alignment.centerLeft,
                                 padding: const EdgeInsets.only(right: 5.0),
                                 child: Text(
-                                  '[阅读进度] ${_cover.maxReadChapterTitle} ',
+                                  '[閱讀進度] ${_cover.maxReadChapterTitle} ',
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
                                     fontSize: 13.0,
@@ -167,7 +167,7 @@ class ComicCoverRow extends StatelessWidget {
                                 alignment: Alignment.centerRight,
                                 padding: const EdgeInsets.only(left: 5.0),
                                 child: Text(
-                                  '[上次阅读] ${_cover.lastReadChapterTitle}',
+                                  '[上次閱讀] ${_cover.lastReadChapterTitle}',
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
                                     fontSize: 13.0,
@@ -189,7 +189,7 @@ class ComicCoverRow extends StatelessWidget {
                       ),
                       child: ClipRect(
                         child: Text(
-                          _cover.shortIntro ?? '无简介数据',
+                          _cover.shortIntro ?? '無簡介數據',
                           style: TextStyle(
                             fontSize: 14.0,
                           ),

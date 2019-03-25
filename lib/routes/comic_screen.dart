@@ -112,7 +112,7 @@ class _ComicScreenState extends State<ComicScreen>
     if (chMax != null && chMax != chLast) {
       buttons.add(
         _ReadButton(
-          '续读：${chMax.title}',
+          '繼續：${chMax.title}',
           color: Colors.red,
           onPressed: () {
             _onChapterPressed(chMax, startPage: chMax.maxPage);
@@ -124,7 +124,7 @@ class _ComicScreenState extends State<ComicScreen>
     final chFirst = comic.chapterMap[chapterIds.last];
     buttons.add(
       _ReadButton(
-        '开始阅读：${chFirst.title}',
+        '開始閱讀：${chFirst.title}',
         flex: buttons.isEmpty ? 1 : 0,
         onPressed: () {
           _onChapterPressed(chFirst);

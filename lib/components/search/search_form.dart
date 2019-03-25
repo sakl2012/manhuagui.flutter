@@ -91,7 +91,7 @@ class _SearchFormState extends State<SearchForm> {
                     ),
                     Container(
                       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: const Text('漫画搜索',
+                      child: const Text('漫畫搜尋',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18.0,
@@ -103,7 +103,7 @@ class _SearchFormState extends State<SearchForm> {
                         autofocus: true,
                         style: const TextStyle(color: Colors.white),
                         decoration: const InputDecoration(
-                          hintText: '漫画名（支持拼音）',
+                          hintText: '漫畫名稱',
                           hintStyle: TextStyle(color: Colors.grey),
                         ),
                       ),
@@ -145,7 +145,7 @@ class _SearchFormState extends State<SearchForm> {
                     Container(
                       alignment: Alignment.topCenter,
                       padding: const EdgeInsets.all(20.0),
-                      child: const Text('最多显示10条预览',
+                      child: const Text('最多顯示10項預覽',
                           style: TextStyle(
                             color: Colors.grey,
                             fontSize: 22.0,
@@ -159,7 +159,7 @@ class _SearchFormState extends State<SearchForm> {
                         alignment: Alignment.center,
                         padding: const EdgeInsets.all(15.0),
                         color: Colors.red,
-                        child: const Text('显示全部 ...',
+                        child: const Text('顯示全部 ...',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 18.0,

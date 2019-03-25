@@ -17,7 +17,7 @@ class _LogoutFormState extends State<LogoutForm> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             _loggedOut
-                ? const Text('已退出！',
+                ? const Text('已登出！',
                     style: TextStyle(
                       color: Colors.brown,
                       fontSize: 20.0,
@@ -28,7 +28,7 @@ class _LogoutFormState extends State<LogoutForm> {
                     child: RaisedButton(
                       color: Colors.red[900],
                       textColor: Colors.white,
-                      child: const Text('退出登录',
+                      child: const Text('登出',
                           style: const TextStyle(fontSize: 18.0)),
                       onPressed: () {
                         setState(() {
